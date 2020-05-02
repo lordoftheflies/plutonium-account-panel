@@ -19,7 +19,7 @@ env:
     - GIT_COMMITTER_EMAIL: laszlo.hegedus@cherubits.hu
     - GITHUB_TOKEN: 52e74fea92612c6a0ce0b338f5eb1c52a3d4e61b
     - NPM_TOKEN: 69b20d9f-a1da-4c2d-ad29-673f9021783a
-    
+
 before_script:
   - npm install
 
