@@ -1,7 +1,8 @@
 /node_modules/
 /lib/
 /test/
-
+/coverage/
+/dist/
 .idea/
 lsp/
 # top level source
