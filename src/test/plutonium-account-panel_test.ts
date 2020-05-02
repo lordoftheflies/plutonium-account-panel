@@ -1,16 +1,16 @@
-import {MyElement} from '../my-element.js';
+import {MyElement} from '../plutonium-account-panel.js';
 import {fixture, html} from '@open-wc/testing';
 
 const assert = chai.assert;
 
-suite('my-element', () => {
+suite('plutonium-account-panel', () => {
   test('is defined', () => {
-    const el = document.createElement('my-element');
+    const el = document.createElement('plutonium-account-panel');
     assert.instanceOf(el, MyElement);
   });
 
   test('renders with default values', async () => {
-    const el = await fixture(html`<my-element></my-element>`);
+    const el = await fixture(html`<plutonium-account-panel></plutonium-account-panel>`);
     assert.shadowDom.equal(
       el,
       `
@@ -22,7 +22,7 @@ suite('my-element', () => {
   });
 
   test('renders with a set name', async () => {
-    const el = await fixture(html`<my-element name="Test"></my-element>`);
+    const el = await fixture(html`<plutonium-account-panel name="Test"></plutonium-account-panel>`);
     assert.shadowDom.equal(
       el,
       `
@@ -34,7 +34,7 @@ suite('my-element', () => {
   });
 
   test('handles a click', async () => {
-    const el = (await fixture(html`<my-element></my-element>`)) as MyElement;
+    const el = (await fixture(html`<plutonium-account-panel></plutonium-account-panel>`)) as MyElement;
     const button = el.shadowRoot!.querySelector('button')!;
     button.click();
     await el.updateComplete;

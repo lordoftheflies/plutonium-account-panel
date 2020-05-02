@@ -18,9 +18,9 @@ import resolve from 'rollup-plugin-node-resolve';
 import replace from '@rollup/plugin-replace';
 
 export default {
-  input: 'my-element.js',
+  input: 'plutonium-account-panel.js',
   output: {
-    file: 'my-element.bundled.js',
+    file: 'plutonium-account-panel.bundled.js',
     format: 'esm',
   },
   onwarn(warning) {

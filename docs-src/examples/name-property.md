@@ -1,15 +1,15 @@
 ---
 layout: example.11ty.cjs
-title: <my-element> ⌲ Examples ⌲ Name Property
+title: <plutonium-account-panel> ⌲ Examples ⌲ Name Property
 tags: example
 name: Name Property
 description: Setting the name property
 ---
 
-<my-element name="Earth"></my-element>
+<plutonium-account-panel name="Earth"></plutonium-account-panel>
 
 <h3>HTML</h3>
 
 ```html
-<my-element name="Earth"></my-element>
+<plutonium-account-panel name="Earth"></plutonium-account-panel>
 ```

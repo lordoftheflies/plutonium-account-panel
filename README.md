@@ -1,6 +1,8 @@
-# LitElement TypeScript starter 
+# Plutonium Account Panel 
 
 This project includes a sample component using LitElement with TypeScript.
+
+[![Demonstration](https://img.shields.io/badge/Live-Demo-darkred)](https://lordoftheflies.github.io/plutonium-account-panel)
 
 ## Setup
 

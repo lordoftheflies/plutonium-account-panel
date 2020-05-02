@@ -2,8 +2,10 @@
 /lib/
 /test/
 
+.idea/
+lsp/
 # top level source
-my-element.js
-my-element.js.map
-my-element.d.ts
-my-element.d.ts.map
+plutonium-account-panel.js
+plutonium-account-panel.js.map
+plutonium-account-panel.d.ts
+plutonium-account-panel.d.ts.map

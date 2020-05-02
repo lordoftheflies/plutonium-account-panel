@@ -1,16 +1,16 @@
 ---
 layout: page.11ty.cjs
-title: <my-element> ⌲ Install
+title: <plutonium-account-panel> ⌲ Install
 ---
 
 # Install
 
-`<my-element>` is distributed on npm, so you can install it locally or use it via npm CDNs like unpkg.com.
+`<plutonium-account-panel>` is distributed on npm, so you can install it locally or use it via npm CDNs like unpkg.com.
 
 ## Local Installation
 
 ```bash
-npm i my-element
+npm i plutonium-account-panel
 ```
 
 ## CDN
@@ -21,10 +21,10 @@ For this element to work from unpkg.com specifically, you need to include the `?
 
 ### HTML
 ```html
-<script type="module" src="https://unpkg.com/my-element?module"></script>
+<script type="module" src="https://unpkg.com/plutonium-account-panel?module"></script>
 ```
 
 ### JavaScript
 ```html
-import {MyElement} from 'https://unpkg.com/my-element?module';
+import {PlutoniumAccountPanel} from 'https://unpkg.com/plutonium-account-panel?module';
 ```
