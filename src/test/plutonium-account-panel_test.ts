@@ -1,4 +1,4 @@
-import {MyElement} from '../plutonium-account-panel.js';
+import {PlutoniumAccountPanel} from '../plutonium-account-panel.js';
 import {fixture, html} from '@open-wc/testing';
 
 const assert = chai.assert;
@@ -6,7 +6,7 @@ const assert = chai.assert;
 suite('plutonium-account-panel', () => {
   test('is defined', () => {
     const el = document.createElement('plutonium-account-panel');
-    assert.instanceOf(el, MyElement);
+    assert.instanceOf(el, PlutoniumAccountPanel);
   });
 
   test('renders with default values', async () => {
@@ -34,7 +34,7 @@ suite('plutonium-account-panel', () => {
   });
 
   test('handles a click', async () => {
-    const el = (await fixture(html`<plutonium-account-panel></plutonium-account-panel>`)) as MyElement;
+    const el = (await fixture(html`<plutonium-account-panel></plutonium-account-panel>`)) as PlutoniumAccountPanel;
     const button = el.shadowRoot!.querySelector('button')!;
     button.click();
     await el.updateComplete;

@@ -183,17 +183,17 @@ found at http://polymer.github.io/PATENTS.txt
  * subject to an additional IP rights grant found at
  * http://polymer.github.io/PATENTS.txt
  */
-var Z=function(t,s,i,e){for(var n,o=arguments.length,r=o<3?s:null===e?e=Object.getOwnPropertyDescriptor(s,i):e,h=t.length-1;h>=0;h--)(n=t[h])&&(r=(o<3?n(r):o>3?n(s,i,r):n(s,i))||r);return o>3&&r&&Object.defineProperty(s,i,r),r};let tt=class extends Y{constructor(){super(...arguments),this.name="World",this.count=0}render(){return N`
+const Z=function(t,s,i,e){for(var n,o=arguments.length,r=o<3?s:null===e?e=Object.getOwnPropertyDescriptor(s,i):e,h=t.length-1;h>=0;h--)(n=t[h])&&(r=(o<3?n(r):o>3?n(s,i,r):n(s,i))||r);return o>3&&r&&Object.defineProperty(s,i,r),r};let tt=class extends Y{constructor(){super(...arguments),this.name="World",this.count=0}render(){return N`
       <h1>Hello, ${this.name}!</h1>
       <button @click=${this._onClick} part="button">
         Click Count: ${this.count}
       </button>
       <slot></slot>
-    `}_onClick(){this.count++}foo(){return"foo"}};var st;tt.styles=((t,...s)=>{const i=s.reduce((s,i,e)=>s+(t=>{if(t instanceof Q)return t.cssText;if("number"==typeof t)return t;throw new Error(`Value passed to 'css' function must be a 'css' function result: ${t}. Use 'unsafeCSS' to pass non-literal values, but\n            take care to ensure page security.`)})(i)+t[e+1],t[0]);return new Q(i,K)})`
+    `}_onClick(){this.count++}foo(){return"foo"}};let st;tt.styles=((t,...s)=>{const i=s.reduce((s,i,e)=>s+(t=>{if(t instanceof Q)return t.cssText;if("number"==typeof t)return t;throw new Error(`Value passed to 'css' function must be a 'css' function result: ${t}. Use 'unsafeCSS' to pass non-literal values, but\n            take care to ensure page security.`)})(i)+t[e+1],t[0]);return new Q(i,K)})`
     :host {
       display: block;
       border: solid 1px gray;
       padding: 16px;
       max-width: 800px;
     }
-  `,Z([D()],tt.prototype,"name",void 0),Z([D({type:Number})],tt.prototype,"count",void 0),tt=Z([(st="plutonium-account-panel",t=>"function"==typeof t?((t,s)=>(window.customElements.define(t,s),s))(st,t):((t,s)=>{const{kind:i,elements:e}=s;return{kind:i,elements:e,finisher(s){window.customElements.define(t,s)}}})(st,t))],tt);export{tt as MyElement};
+  `,Z([D()],tt.prototype,"name",void 0),Z([D({type:Number})],tt.prototype,"count",void 0),tt=Z([(st="plutonium-account-panel",t=>"function"==typeof t?((t,s)=>(window.customElements.define(t,s),s))(st,t):((t,s)=>{const{kind:i,elements:e}=s;return{kind:i,elements:e,finisher(s){window.customElements.define(t,s)}}})(st,t))],tt);export{tt as PlutoniumAccountPanel};
