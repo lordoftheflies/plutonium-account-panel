@@ -23,3 +23,8 @@ script:
 
 after_script:
   - npm run publish
+
+deploy:
+  provider: npm
+  email: "laszlo.hegedus@cherubits.hu"
+  api_key: "cb19333e-0ae6-4bc1-b13c-4f869bf11515"
