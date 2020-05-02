@@ -4,13 +4,21 @@ import {fixture, html} from '@open-wc/testing';
 const assert = chai.assert;
 
 suite('plutonium-account-panel', () => {
+
+  test('dd', () => {
+    const el = document.createElement('plutonium-account-panel');
+    assert.isNotEmpty(el.render());
+  });
+
   test('is defined', () => {
     const el = document.createElement('plutonium-account-panel');
     assert.instanceOf(el, PlutoniumAccountPanel);
   });
 
   test('renders with default values', async () => {
-    const el = await fixture(html`<plutonium-account-panel></plutonium-account-panel>`);
+    const el = await fixture(
+      html`<plutonium-account-panel></plutonium-account-panel>`
+    );
     assert.shadowDom.equal(
       el,
       `
@@ -22,7 +30,9 @@ suite('plutonium-account-panel', () => {
   });
 
   test('renders with a set name', async () => {
-    const el = await fixture(html`<plutonium-account-panel name="Test"></plutonium-account-panel>`);
+    const el = await fixture(
+      html`<plutonium-account-panel name="Test"></plutonium-account-panel>`
+    );
     assert.shadowDom.equal(
       el,
       `
@@ -34,7 +44,9 @@ suite('plutonium-account-panel', () => {
   });
 
   test('handles a click', async () => {
-    const el = (await fixture(html`<plutonium-account-panel></plutonium-account-panel>`)) as PlutoniumAccountPanel;
+    const el = (await fixture(
+      html`<plutonium-account-panel></plutonium-account-panel>`
+    )) as PlutoniumAccountPanel;
     const button = el.shadowRoot!.querySelector('button')!;
     button.click();
     await el.updateComplete;

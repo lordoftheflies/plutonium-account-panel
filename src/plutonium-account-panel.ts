@@ -45,7 +45,6 @@ export class PlutoniumAccountPanel extends LitElement {
 
   render() {
     return html`
-      
       <h1>Hello, ${this.name}!</h1>
       <button @click=${this._onClick} part="button">
         Click Count: ${this.count}
