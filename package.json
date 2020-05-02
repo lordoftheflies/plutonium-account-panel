@@ -1,6 +1,7 @@
 {
-  "name": "@lordoftheflies/plutonium-account-panel",
+  "name": "plutonium-account-panel",
   "version": "0.0.2",
+  "private": false,
   "description": "Account information panel.",
   "main": "plutonium-account-panel.js",
   "module": "plutonium-account-panel.js",

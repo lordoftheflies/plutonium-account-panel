@@ -4,8 +4,29 @@ This project includes a sample component using LitElement with TypeScript.
 
 [![Build Status](https://travis-ci.org/lordoftheflies/plutonium-account-panel.svg?branch=master)](https://travis-ci.org/lordoftheflies/plutonium-account-panel)
 
+[![npm (scoped)](https://img.shields.io/npm/v/@lordoftheflies/plutonium-account-panel)]()
 
-[![Demonstration](https://img.shields.io/badge/Live-Demo-darkred)](https://lordoftheflies.github.io/plutonium-account-panel)
+![npm bundle size (scoped version)](https://img.shields.io/bundlephobia/minzip/@lordoftheflies/plutonium-account-panel/0.0.2)
+
+[![Demonstration](https://img.shields.io/badge/live-demo-darkred)](https://lordoftheflies.github.io/plutonium-account-panel)
+
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/lordoftheflies/plutonium-account-panel)
+
+## Usage
+
+<!--
+```
+<custom-element-demo>
+  <template>
+    <script type="module" src="./plutonium-account-panel.js"></script>
+    <next-code-block></next-code-block>
+  </template>
+</custom-element-demo>
+```
+-->
+```html
+<plutonium-account-panel></plutonium-account-panel>
+```
 
 ## Setup
 
