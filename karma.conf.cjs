@@ -8,6 +8,18 @@ module.exports = (config) => {
       client: {
         mocha: {ui: 'tdd'},
       },
+      reporters: ['progress', 'mocha', 'coverage'],
+      preprocessors: {
+        // source files, that you wanna generate coverage for
+        // do not include tests or libraries
+        // (these files will be instrumented by Istanbul)
+        //'test/**/*_test.js': ['coverage'],
+        'test/**/*.js': ['coverage'],
+        './plutonium-account-panel.js': ['coverage']
+      },
+      plugins: [
+        'karma-coverage'
+      ],
       files: [
         {
           pattern: config.grep ? config.grep : 'test/**/*_test.js',
@@ -18,6 +30,14 @@ module.exports = (config) => {
       esm: {
         nodeResolve: true,
       },
+      coverageReporter: {
+        includeAllSources: true,
+        dir: 'coverage/',
+        reporters: [
+          { type: "html", subdir: "html" },
+          { type: 'text-summary' }
+        ]
+      }
     })
   );
   return config;
