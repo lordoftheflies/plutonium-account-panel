@@ -2,6 +2,9 @@
 
 This project includes a sample component using LitElement with TypeScript.
 
+[![Build Status](https://travis-ci.org/lordoftheflies/plutonium-account-panel.svg?branch=master)](https://travis-ci.org/lordoftheflies/plutonium-account-panel)
+
+
 [![Demonstration](https://img.shields.io/badge/Live-Demo-darkred)](https://lordoftheflies.github.io/plutonium-account-panel)
 
 ## Setup
