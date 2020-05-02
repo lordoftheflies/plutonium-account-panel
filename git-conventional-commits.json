@@ -1,4 +1,5 @@
 {
+  "preset": "eslint",
   "convention" : {
     "commitTypes": [
       "feat",

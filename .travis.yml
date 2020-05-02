@@ -11,7 +11,7 @@ cache:
     - node_modules
 env:
 
-  GH_TOKEN: 52e74fea92612c6a0ce0b338f5eb1c52a3d4e61b
+  GITHUB_TOKEN: 52e74fea92612c6a0ce0b338f5eb1c52a3d4e61b
   NODE_AUTH_TOKEN: w
   NPM_TOKEN: 69b20d9f-a1da-4c2d-ad29-673f9021783a
   global:
@@ -28,7 +28,23 @@ script:
 after_script:
   - npm ci
 
-deploy:
-  provider: npm
-  email: "laszlo.hegedus@cherubits.hu"
-  api_key: "cb19333e-0ae6-4bc1-b13c-4f869bf11515"
+#deploy:
+#  provider: npm
+#  email: "laszlo.hegedus@cherubits.hu"
+#  api_key: "cb19333e-0ae6-4bc1-b13c-4f869bf11515"
+
+
+jobs:
+  include:
+    # Define the release stage that runs semantic-release
+    - stage: release
+      node_js: lts/*
+      # Advanced: optionally overwrite your default `script` step to skip the tests
+      # script: skip
+      deploy:
+        provider: script
+        skip_cleanup: true
+        script:
+          - npx semantic-release
+      on:
+        branch: master
