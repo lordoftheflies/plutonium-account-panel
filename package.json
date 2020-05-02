@@ -1,6 +1,6 @@
 {
   "name": "plutonium-account-panel",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": false,
   "description": "Account information panel.",
   "main": "plutonium-account-panel.js",
