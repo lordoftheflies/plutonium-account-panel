@@ -28,7 +28,9 @@
     "test:update-snapshots": "karma start karma.conf.cjs --update-snapshots",
     "test:prune-snapshots": "karma start karma.conf.cjs --prune-snapshots",
     "checksize": "rollup -c ; cat plutonium-account-panel.bundled.js | gzip -9 | wc -c ; rm plutonium-account-panel.bundled.js",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "precommit": "pretty-quick --config .prettierrc.json --staged",
+    "postinstall": "npm run prettier -s"
   },
   "keywords": [
     "cherubits",
@@ -92,7 +94,7 @@
   "homepage": "https://lordoftheflies.github.io/plutonium-account-panel/",
   "husky": {
     "hooks": {
-      "pre-commit": "npm test"
+      "pre-commit": "echo 'Pre-commit hook...' && npm run precommit"
     }
   }
 }
